@@ -18,7 +18,7 @@ SSID: **Raspberry Pi**, password: **mysuperstrongpassword**
 How to install:
 ```bash
 sudo apt install hostapd isc-dhcp-server
-sudo cp wifi-ap/* /etc/
+sudo cp -r wifi-ap/* /etc/
 sudo service hostapd restart
 sudo service isc-dhcp-server restart
 ```
