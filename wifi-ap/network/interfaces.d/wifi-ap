@@ -1,7 +1,7 @@
 auto wlan0
 iface wlan0 inet static
-        address 192.168.7.1
+        address 10.0.7.1
         netmask 255.255.255.0
-        network 192.168.7.0
+        network 10.0.7.0
         dns-nameservers 8.8.8.8 8.8.4.4
  
