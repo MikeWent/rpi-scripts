@@ -1,1 +1,1 @@
-INTERFACES="wlan0"
+INTERFACESv4="wlan0"
