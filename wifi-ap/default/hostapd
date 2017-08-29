@@ -1,2 +1,6 @@
-DAEMON_CONF="/etc/hostapd/hostapd.conf"
+##
+# rpi-scripts 
+# gitlab.com/Mike_Went/rpi-scripts
+##
 
+DAEMON_CONF="/etc/hostapd/hostapd.conf"

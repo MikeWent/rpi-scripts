@@ -1,4 +1,10 @@
 #!/usr/bin/env python3
+
+##
+# rpi-scripts
+# gitlab.com/Mike_Went/rpi-scripts
+##
+
 import os
 
 def celsius2fahrenheit(temp):
