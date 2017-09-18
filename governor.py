@@ -25,8 +25,8 @@ def set_governor(governor):
         with open(cpufreq_path + 'scaling_governor', 'w') as f:
             f.write(governor)
     except:
-        print('Unable to set governor.')
-        exit()
+        print('Unable to set governor. Try to run with root privileges.')
+        exit(1)
         
 # =================================
 
@@ -49,10 +49,10 @@ if argv[1] == '-c':
 
 if argv[1] == '-l':
     available_governors = list_governors()
-    pretty_string = ''
-    for governor in available_governors:
-        pretty_string += '\n - ' + governor
-    print('Available governors:'+pretty_string)
+    pretty_list = ''
+    for governor in available_list:
+        pretty_list += '\n - ' + governor
+    print('Available governors:'+pretty_list)
     exit()
 
 if argv[1] == '-s':
@@ -62,8 +62,8 @@ if argv[1] == '-s':
         exit()
     governor = argv[2]
     set_governor(governor)
-    print('Governor set to', governor)
     exit()
     
 else:
     print_help()
+
