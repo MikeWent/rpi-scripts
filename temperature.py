@@ -9,7 +9,7 @@ import os
 
 def celsius2fahrenheit(temp):
     fahrenheit = 9.0/5.0 * temp + 32
-    return round(fahrenheit, 2)
+    return round(fahrenheit, 1)
 
 with open('/sys/class/thermal/thermal_zone0/temp', 'r') as f:
     raw_cpu_temp = f.read()
