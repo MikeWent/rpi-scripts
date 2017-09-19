@@ -29,7 +29,7 @@ sudo service dnsmasq restart
 ```
 
 ## Forward traffic
-For example, if eth0 is configured to use internet abd wlan0 is access point (WiFi hotspot), you can do this:
+For example, if eth0 is configured to use internet and wlan0 is access point (WiFi hotspot), you can do this:
 ```bash
 ./forward.s eth0 wlan0
 ```
