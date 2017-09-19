@@ -50,7 +50,7 @@ if argv[1] == '-c':
 if argv[1] == '-l':
     available_governors = list_governors()
     pretty_list = ''
-    for governor in available_list:
+    for governor in available_governors:
         pretty_list += '\n - ' + governor
     print('Available governors:'+pretty_list)
     exit()
