@@ -31,7 +31,7 @@ sudo service dnsmasq restart
 ## Forward traffic
 For example, if eth0 is configured to use internet and wlan0 is access point (WiFi hotspot), you can do this:
 ```bash
-./forward.s eth0 wlan0
+./forward.sh eth0 wlan0
 ```
 *Poof!* You have access to the internet on your wlan0 now.
 
@@ -66,3 +66,5 @@ Current governor: powersave
 Set governor: `sudo ./governor.py -s performance`
 
 
+## License
+GPLv3
