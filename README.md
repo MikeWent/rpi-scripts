@@ -6,7 +6,7 @@ Raspberry Pi 3B scripts collection
 You need `git` and `python3`.
 ```bash
 sudo apt install python3 git
-git clone https://gitlab.com/Mike_Went/rpi-scripts.git
+git clone https://github.com/MikeWent/rpi-scripts.git
 ```
 
 ## Comaptibility
