@@ -68,6 +68,12 @@ Current governor: powersave
 
 Set governor: `sudo ./governor.py -s performance`
 
+## Random MAC
+
+Need `macchanger` package to work.
+
+`./randmac.sh wlan0`
+
 ## License
 
 GPLv3
