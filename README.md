@@ -72,7 +72,9 @@ Set governor: `sudo ./governor.py -s performance`
 
 Need `macchanger` package to work.
 
-`./randmac.sh wlan0`
+Change MAC only on selected interface: `./randmac.sh wlan0`
+
+Try to change MAC on **all** interfaces (default): `./randmac.sh`
 
 ## License
 
