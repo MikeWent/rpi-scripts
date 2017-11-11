@@ -20,3 +20,5 @@ else
     set_iface_random_mac $1
 fi
 
+sudo systemctl restart networking.service
+

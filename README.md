@@ -70,11 +70,11 @@ Set governor: `sudo ./governor.py -s performance`
 
 ## Random MAC
 
-Need `macchanger` package to work.
+Needs `macchanger` package to work.
 
-Change MAC only on selected interface: `randmac.sh wlan0`
+Changes MAC on **all** interfaces by default. But you can specify one manuaally: `randmac.sh wlan0`
 
-Try to change MAC on **all** interfaces (default): `randmac.sh`
+Restarts `networking.service` after all operations.
 
 ## License
 
