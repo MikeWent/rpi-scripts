@@ -66,7 +66,7 @@ Current governor: `governor.py -c`
 Current governor: powersave
 ```
 
-Set governor: `sudo governor.py -s performance`
+Set governor: `sudo ./governor.py -s performance`
 
 ## Random MAC
 
