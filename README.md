@@ -28,14 +28,14 @@ sudo service dnsmasq restart
 For example, if eth0 is configured to use internet and wlan0 is access point (WiFi hotspot), you can do this:
 
 ```bash
-./forward.sh eth0 wlan0
+forward.sh eth0 wlan0
 ```
 
 *Poof!* You have access to the internet on your wlan0 now.
 
 ## Temperature
 
-Use `./temperature.py` or `watch -tn 1 ./temperature.py`
+Just shows current CPU & GPU temperature. Real-time monotor: `watch -tn 1 ./temperature.py`
 
 Example output:
 
@@ -48,7 +48,7 @@ GPU: 49.9°C 121.8°F
 
 Raspberry Pi supports several CPU governors. For example: _powersave_, _ondemand_, _performance_.
 
-List available: `./governor.py -l`
+List available: `governor.py -l`
 
 ```
 Available governors:
@@ -60,21 +60,21 @@ Available governors:
  - schedutil
 ```
 
-Current governor: `./governor.py -c`
+Current governor: `governor.py -c`
 
 ```
 Current governor: powersave
 ```
 
-Set governor: `sudo ./governor.py -s performance`
+Set governor: `sudo governor.py -s performance`
 
 ## Random MAC
 
 Need `macchanger` package to work.
 
-Change MAC only on selected interface: `./randmac.sh wlan0`
+Change MAC only on selected interface: `randmac.sh wlan0`
 
-Try to change MAC on **all** interfaces (default): `./randmac.sh`
+Try to change MAC on **all** interfaces (default): `randmac.sh`
 
 ## License
 
