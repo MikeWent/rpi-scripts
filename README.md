@@ -74,8 +74,6 @@ Needs `macchanger` package to work.
 
 Changes MAC on **all** interfaces by default. But you can specify one manuaally: `randmac.sh wlan0`
 
-Restarts `networking.service` after all operations.
-
 ## License
 
 GPLv3
