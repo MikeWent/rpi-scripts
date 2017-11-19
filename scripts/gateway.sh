@@ -2,7 +2,7 @@
 
 ##
 # rpi-scripts
-# gitlab.com/Mike_Went/rpi-scripts
+# github.com/MikeWent/rpi-scripts
 ##
 
 sudo ip route delete default dev $2
