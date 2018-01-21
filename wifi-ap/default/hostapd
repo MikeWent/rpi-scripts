@@ -1,6 +1,0 @@
-##
-# rpi-scripts 
-# github.com/MikeWent/rpi-scripts
-##
-
-DAEMON_CONF="/etc/hostapd/hostapd.conf"

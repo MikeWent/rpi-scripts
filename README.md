@@ -8,21 +8,6 @@ Tested and 100% compatible: [Raspbian 8 Lite (jessie)](http://downloads.raspberr
 
 Now testing Raspbian 9.1 (stretch)
 
-## WiFi AP
-
-Minimal config to create WiFi access point with DHCP, caching DNS and WPA2-PSK.
-
-Default SSID: **Raspberry Pi**, default password: **mysuperstrongpassword**
-
-How to install:
-
-```bash
-sudo apt install hostapd dnsmasq
-sudo cp -r wifi-ap/* /etc/
-sudo service hostapd restart
-sudo service dnsmasq restart
-```
-
 ## Forward traffic
 
 For example, if eth0 is configured to use internet and wlan0 is access point (WiFi hotspot), you can do this:
