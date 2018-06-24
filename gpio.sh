@@ -21,11 +21,10 @@ function gpio_set {
     # set value if passed
     if [ ! -z "$2" ]; then
         echo $2 > /sys/class/gpio/gpio$1/value
-        echo "pin $1 is set to $2"
+        # echo "pin $1 is set to $2"
     fi
 }
 
-# 
 if [ ! -z "$2" ]; then
     # just set value if user passed it
     gpio_set $1 $2
