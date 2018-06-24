@@ -25,29 +25,26 @@ Just shows current CPU & GPU temperature. Real-time monotor: `watch -tn 1 ./temp
 Example output:
 
 ```
-CPU: 50.5°C 122.9°F
-GPU: 49.9°C 121.8°F
+CPU: 50.5'C 122.9'F
+GPU: 49.9'C 121.8'F
 ```
 
 ## GPIO
 
 Control GPIO pins with easy syntax: `gpio.sh pin value`
 
-- set pin 18 to 1: `gpio.sh 18 1`
+- set pin 18 to 1: `./gpio.sh 18 1`
 - set pin 15 to 0: `gpio.sh 15 0` 
 - `gpio.sh 17` sets pin 17 to 1 or 0 depending on current value. It works like a switch.
 
 Example:
-```
-$ ./gpio.sh 18 1
-pin 18 is set to 1
-$ ./gpio.sh 15 0
-pin 15 is set to 0
 
-$ ./gpio.sh 17
-pin 17 is set to 1
-$ ./gpio.sh 17
-pin 17 is set to 0
+```bash
+$ ./gpio.sh 18 1 # pin 18 will be set to 1
+$ ./gpio.sh 15 0 # pin 15 will be set to 0
+
+$ ./gpio.sh 17 # pin 17 will be set to 1
+$ ./gpio.sh 17 # pin 17 will be set to 0
 ```
 
 ## CPU governor
@@ -76,9 +73,15 @@ Set governor: `sudo ./governor.py -s performance`
 
 ## Random MAC
 
-Needs `macchanger` package to work.
+Requires `macchanger` package.
 
 Changes MAC on **all** interfaces by default. But you can specify one manuaally: `randmac.sh wlan0`
+
+## Net monitor
+
+Requires `ifstat` and `bc` package.
+
+Switches GPIO pins depending on current network bandwidth. Works like an indicator with LEDs connected to the GPIO.
 
 ## License
 
